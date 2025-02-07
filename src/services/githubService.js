@@ -1,10 +1,9 @@
 import axios from "axios";
 
 const API_URL = import.meta.env.VITE_GITHUB_API_URL;
-const BACKEND_URL = "https://mygithubbackend-sfdm.vercel.app/"; // Replace with your actual backend URL
 
 export const getGitHubToken = async (code) => {
-  const response = await axios.post(`${BACKEND_URL}/auth/github`, { code });
+  const response = await axios.post("http://localhost:5000/auth/github", { code });
   return response.data.access_token;
 };
 

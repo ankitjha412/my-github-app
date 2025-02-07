@@ -3,7 +3,7 @@ import { fetchUserProfile, fetchRepositories } from "../../services/githubServic
 import UserProfile from "../UserProfile/UserProfile";
 import RepositoryList from "../RepoList/RepositoryList";
 import GitHubHeatmap from "../Githubheatmap/GitHubHeatmap";
-import UserSearch from "../UserSearch/UserSearch";
+import UserSearch from "../UserSearch";
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);

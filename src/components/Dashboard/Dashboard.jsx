@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { fetchUserProfile, fetchRepositories } from "../services/githubService";
-import UserProfile from "./UserProfile";
-import RepositoryList from "./RepositoryList";
-import GitHubHeatmap from "./GitHubHeatmap";
-import UserSearch from "./UserSearch";
+import { fetchUserProfile, fetchRepositories } from "../../services/githubService";
+import UserProfile from "../UserProfile/UserProfile";
+import RepositoryList from "../RepoList/RepositoryList";
+import GitHubHeatmap from "../Githubheatmap/GitHubHeatmap";
+import UserSearch from "../UserSearch/UserSearch";
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);

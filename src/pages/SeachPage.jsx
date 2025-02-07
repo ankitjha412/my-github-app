@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchSearchedUserProfile, fetchUserRepositories } from "../services/githubService";
-import SearchedUserProfile from "../components/SearchedUserProfile";
-import RepositoryList from "../components/RepositoryList";
+import SearchedUserProfile from "../components/SearchProfile/SearchedUserProfile";
+import RepositoryList from "../components/RepoList/RepositoryList";
 
 const SearchPageDetails = () => {
   const { username } = useParams(); // ✅ Get the searched username from the URL

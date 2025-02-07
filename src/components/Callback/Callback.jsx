@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getGitHubToken } from "../services/githubService.js";
+import { getGitHubToken } from "../../services/githubService.js";
 
 const Callback = () => {
   const [token, setToken] = useState(null);

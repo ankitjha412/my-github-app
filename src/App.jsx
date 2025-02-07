@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Auth from "./components/Auth";
-import Callback from "./components/Callback";
-import Dashboard from "./components/Dashboard";
+import Auth from "./components/Auth/Auth";
+import Callback from "./components/Callback/Callback";
+import Dashboard from "./components/Dashboard/Dashboard";
 import CommitDetails from "./pages/CommitDetails";
-import ReadmeViewer from "./components/ReadmeViewer";
+import ReadmeViewer from "./components/Readme/ReadmeViewer";
 import SearchPageDetails from "./pages/SeachPage";
 
 function App() {

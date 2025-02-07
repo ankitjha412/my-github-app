@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchReadme, fetchUserProfile } from "../services/githubService"; // ✅ Fetch user profile
-import GitHubHeatmap from "./GitHubHeatmap";
+import { fetchReadme, fetchUserProfile } from "../../services/githubService"; // ✅ Fetch user profile
+import GitHubHeatmap from "../Githubheatmap/GitHubHeatmap";
 
 const ReadmeViewer = () => {
   const { owner, repo } = useParams(); // ✅ Get repo details from URL

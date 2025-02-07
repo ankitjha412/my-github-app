@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import GitHubHeatmap from "./GitHubHeatmap";
+import GitHubHeatmap from "../Githubheatmap/GitHubHeatmap";
 import {
   followUser,
   unfollowUser,
   checkFollowStatus,
-} from "../services/githubService"; // ✅ Import API calls
+} from "../../services/githubService"; // ✅ Import API calls
 
 const SearchedUserProfile = ({ user }) => {
   const navigate = useNavigate();

@@ -23,7 +23,7 @@ const CommitDetails = () => {
       <div className="commit-details">
       <h2>Commit Details for {repo}</h2>
 
-      <h3>Recent Commits:</h3>
+      <h3>Contributions:</h3>
       <ul>
         {commits.map((commit) => (
           <li key={commit.sha}>
@@ -32,7 +32,7 @@ const CommitDetails = () => {
         ))}
       </ul>
 
-      <h3>Contributions:</h3>
+      <h3>fetchRecentCommits:</h3>
       <ul>
         {contributions.map((event, index) => (
           <li key={index}>

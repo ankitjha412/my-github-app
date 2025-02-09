@@ -23,7 +23,7 @@ const CommitDetails = () => {
       <div className="commit-details">
       <h2>Commit Details for {repo}</h2>
 
-      <h3>Contributions:</h3>
+      <h3>Commits:</h3>
       <ul>
         {commits.map((commit) => (
           <li key={commit.sha}>

@@ -1,0 +1,178 @@
+/* Main container for the repository list */
+.repository-container {
+    padding: 1.5rem;
+    background-color: #0d1117; /* Dark background like GitHub dark mode */
+    border-radius: 8px;
+    color: #c9d1d9; /* Light text for dark mode */
+    max-height: 500px;
+    width: 660px; /* Fixed height for scrollable list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #30363d;
+  }
+
+  .repository-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .repository-container {
+    scrollbar-width: none; /* Disable scrollbar in Firefox */
+  }
+  /* Title styling */
+  .repository-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #58a6ff; /* Blue GitHub-inspired */
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Repository list styling */
+  .repository-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+  }
+  
+  /* Individual repository card */
+  .repository-container li {
+    background-color: #161b22; /* Slightly lighter dark background */
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .repository-container li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Repository name */
+  .repository-container li .repo-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #58a6ff; /* Blue GitHub-inspired */
+    cursor: pointer;
+  }
+  
+  .repository-container li .repo-name:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons container */
+  .repository-container li .repo-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Buttons */
+  .repository-container li button {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .repository-container li button:nth-child(1) {
+    background-color: #238636; /* Green for commits */
+    color: #ffffff;
+  }
+  
+  .repository-container li button:nth-child(1):hover {
+    background-color: #2ea043;
+  }
+  
+  .repository-container li button:nth-child(2) {
+    background-color: #0969da; /* Blue for README */
+    color: #ffffff;
+  }
+  
+  .repository-container li button:nth-child(2):hover {
+    background-color: #0a66c2;
+  }
+  .repository-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr; /* Single-column layout for scrolling */
+    gap: 1rem;
+  }
+  .repo-card {
+    background-color: #161b22; /* Slightly lighter dark background */
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .repo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Repository name */
+  .repo-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #58a6ff; /* Blue GitHub-inspired */
+    cursor: pointer;
+  }
+  
+  .repo-name:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons container */
+.repo-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Buttons */
+  .repo-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    
+  }
+  
+  .repo-buttons button:nth-child(1) {
+    background-color: #238636; /* Green for commits */
+    color: #ffffff;
+  }
+  
+  .repo-buttons button:nth-child(1):hover {
+    background-color: #2ea043;
+  }
+  
+  .repo-buttons button:nth-child(2) {
+    background-color: #0969da; /* Blue for README */
+    color: #ffffff;
+  }
+  
+  .repo-buttons button:nth-child(2):hover {
+    background-color: #0a66c2;
+  }

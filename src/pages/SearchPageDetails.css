@@ -1,0 +1,19 @@
+.search-page{
+    display: flex;
+    background-color: #0d1117; /* Dark background */
+    color: #c9d1d9; /* Light text */
+    height: 100vh;
+    overflow-y: hidden;
+
+}
+.gitdetails{
+    width: 700px;
+    margin: 2rem;
+    height: 100vh;
+}
+.repository-list{
+    height: 700px;
+}
+.repositoty{
+    margin-top: 100px;
+}

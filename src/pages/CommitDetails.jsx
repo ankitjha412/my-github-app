@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchRecentCommits, fetchContributions } from "../services/githubService";
+import "./CommitDetails.css";
 
 const CommitDetails = () => {
   const { owner, repo } = useParams(); // ✅ Get repo details from URL
@@ -16,14 +17,17 @@ const CommitDetails = () => {
   }, [token, owner, repo]);
 
   return (
-    <div>
+    <div className="commitmainbox">
+          <button onClick={() => window.history.back()}>🔙 Go Back</button>
+
+      <div className="commit-details">
       <h2>Commit Details for {repo}</h2>
 
       <h3>Recent Commits:</h3>
       <ul>
         {commits.map((commit) => (
           <li key={commit.sha}>
-            {commit.commit.message} - {commit.author?.login}
+            {commit.commit.message} - <strong>{commit.author?.login}</strong>
           </li>
         ))}
       </ul>
@@ -32,14 +36,25 @@ const CommitDetails = () => {
       <ul>
         {contributions.map((event, index) => (
           <li key={index}>
-            {event.type === "PushEvent" && `Pushed ${event.payload.commits.length} commit(s) to ${event.repo.name}`}
-            {event.type === "PullRequestEvent" && `Opened a pull request in ${event.repo.name}`}
+            {event.type === "PushEvent" && (
+              <>
+                <strong>Pushed</strong> {event.payload.commits.length} commit(s) to{" "}
+                <strong>{event.repo.name}</strong>
+              </>
+            )}
+            {event.type === "PullRequestEvent" && (
+              <>
+                <strong>Opened a pull request</strong> in <strong>{event.repo.name}</strong>
+              </>
+            )}
           </li>
         ))}
       </ul>
 
-      <button onClick={() => window.history.back()}>🔙 Go Back</button>
     </div>
+
+    </div>
+    
   );
 };
 

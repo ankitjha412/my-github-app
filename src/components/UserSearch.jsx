@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import '../components/UserSearch/UserSearch.css';
 
 const UserSearch = () => {
   const [username, setUsername] = useState("");
@@ -13,8 +14,7 @@ const UserSearch = () => {
   };
 
   return (
-    <div>
-
+    <div className="user-search">
       <h3>Search for a GitHub User</h3>
       <form onSubmit={handleSubmit}>
         <input

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import './Auth.css';
 
 const CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID;
 const REDIRECT_URI = import.meta.env.VITE_GITHUB_REDIRECT_URI;
@@ -23,10 +24,13 @@ const Auth = () => {
   }, []);
 
   return (
-    <div>
+    <div className="authmaincontainer">
+      <div className="auth-container">
       <h2>GitHub OAuth Authentication</h2>
       <button onClick={handleLogin}>Login with GitHub</button>
     </div>
+    </div>
+    
   );
 };
 

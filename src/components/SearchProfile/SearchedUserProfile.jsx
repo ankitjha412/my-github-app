@@ -38,6 +38,9 @@ const SearchedUserProfile = ({ user }) => {
         alt="Profile"
         style={{ width: 100, borderRadius: "50%" }}
       />
+       <button onClick={handleFollow}>
+        {isFollowing ? "Unfollow" : "Follow"}
+      </button>
       <h3>{user.name || user.login}</h3>
       <p>@{user.login}</p>
       {user.bio ? (
@@ -52,9 +55,7 @@ const SearchedUserProfile = ({ user }) => {
       <GitHubHeatmap username={user.login} />
 
       {/* ✅ Follow/Unfollow Button */}
-      <button onClick={handleFollow}>
-        {isFollowing ? "Unfollow" : "Follow"}
-      </button>
+     
 
       {/* ✅ Go Back Button */}
     </div>

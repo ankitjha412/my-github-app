@@ -1,0 +1,106 @@
+/* Main container for the commit details */
+.commitmainbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right:0;
+    padding: 2rem;
+    background-color: #0d1117; /* Dark background */
+    color: #c9d1d9; /* Light text color */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .commit-details {
+    background-color: #161b22; /* Slightly lighter background for content */
+    color: #c9d1d9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #30363d;
+    width: 100%;
+    max-width: 900px;
+    max-height: 80vh; /* Limit height for scrollability */
+    overflow-y: auto;
+    margin-right: 100px; /* Enable vertical scrolling */
+  }
+  
+  /* Title styling */
+  .commit-details h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #58a6ff; /* GitHub-inspired blue */
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .commit-details h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #8b949e;
+    margin-bottom: 1rem;
+  }
+  
+  /* Commit and contribution list styling */
+  .commit-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .commit-details li {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .commit-details li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Highlight important details */
+  .commit-details li strong {
+    color: #58a6ff;
+    font-weight: bold;
+  }
+  
+  /* Back button styling */
+   button {
+    padding: 0.75rem 1.5rem;
+    margin-right: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #238636; /* GitHub green */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .commit-details button:hover {
+    background-color: #2ea043; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Scrollbar styling for a clean look */
+  .commit-details::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .commit-details::-webkit-scrollbar-thumb {
+    background-color: #30363d; /* Dark scrollbar */
+    border-radius: 6px;
+  }
+  
+  .commit-details::-webkit-scrollbar-thumb:hover {
+    background-color: #58a6ff; /* Highlight scrollbar on hover */
+  }
+  
+  .commit-details::-webkit-scrollbar-track {
+    background-color: #161b22; /* Track color */
+  }
+  

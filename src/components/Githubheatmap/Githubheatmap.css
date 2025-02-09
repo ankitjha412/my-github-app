@@ -1,0 +1,47 @@
+/* Container for the heatmap */
+.github-heatmap-container {
+    background-color: #161b22; /* Dark background */
+    color: #c9d1d9; /* Light text color */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 1px solid #30363d;
+    margin-left: auto;
+    margin-right: auto; /* Center the container */
+    text-align: center;
+    justify-items: center;
+    
+  }
+  
+  /* Title styling */
+  .github-heatmap-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #58a6ff; /* GitHub-inspired blue */
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for the GitHub calendar blocks */
+  .react-github-calendar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* Customizing contribution blocks */
+  .react-github-calendar .react-calendar-heatmap {
+    margin: 0;
+  }
+  
+  /* Adjust text styling */
+  .react-github-calendar text {
+    fill: #c9d1d9; /* Light text color */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Scrollbar styling (make it invisible) */
+  .react-github-calendar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  

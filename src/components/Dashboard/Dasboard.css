@@ -1,0 +1,25 @@
+/* Header container styles */
+.dashboard-container{
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0d1117;
+    border-bottom: 1px solid #d0d7de;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Title in the header */
+  .header h2 {
+    font-size: 32px;
+    
+    font-weight: 600;
+    color: #ffff;
+    padding-left: 200px;
+  }
+  .profilerepocontainer{
+    display: flex;
+    height: 500px;
+  }

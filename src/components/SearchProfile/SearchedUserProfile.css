@@ -1,0 +1,76 @@
+/* Container styling */
+.searched-user-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #0d1117; /* GitHub dark background */
+    color: #c9d1d9; /* Light text color */
+    min-height: 100vh;
+  }
+  
+  /* Profile details */
+  .profile-header {
+    text-align: center;
+  }
+  
+  .profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #30363d;
+  }
+  
+  .profile-header h2 {
+    font-size: 24px;
+    color: #58a6ff; /* GitHub blue */
+  }
+  
+  .profile-header h3 {
+    font-size: 18px;
+    color: #8b949e;
+    margin: 0.5rem 0;
+  }
+  
+  .profile-header p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Heatmap Section */
+  .heatmap-container {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 900px;
+    background-color: #161b22;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #30363d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+  }
+  
+  /* Follow/Unfollow button */
+  .follow-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #238636; /* GitHub green */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .follow-button:hover {
+    background-color: #2ea043; /* Darker green */
+    transform: translateY(-2px);
+  }
+  
+  .follow-button:active {
+    background-color: #196c2e;
+    transform: translateY(0);
+  }
+  

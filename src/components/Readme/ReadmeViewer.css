@@ -1,0 +1,87 @@
+/* Main container for the page */
+.readme{
+    background-color: #30363d;
+    height: 90vh;
+    padding-top: 50px;
+}
+.readme-container {
+    max-width: 900px;
+    margin:auto;
+    padding: 2rem;
+    background-color: #0d1117; /* Dark background */
+    color: #c9d1d9; /* Light text */
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  /* Header for README */
+  .readme-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #58a6ff; /* GitHub-inspired blue */
+    margin-bottom: 1rem;
+  }
+  
+  /* README content area */
+  .readme-container pre {
+    background-color: #161b22; /* Darker background for code area */
+    color: #c9d1d9; /* Light text for content */
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 1.5rem;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    max-height: 400px; /* Set a max height for better UI */
+    margin-bottom: 2rem;
+  }
+  
+  /* Go Back button */
+  .readme-container button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #238636; /* GitHub-inspired green */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .readme-container button:hover {
+    background-color: #2ea043; /* Darker green on hover */
+    transform: translateY(-2px);
+  }
+  
+  .readme-container button:active {
+    background-color: #196c2e; /* Even darker green on click */
+    transform: translateY(0); /* Reset transform */
+  }
+  
+  /* Make the container responsive */
+  @media (max-width: 768px) {
+    .readme-container {
+      padding: 1rem;
+    }
+  
+    .readme-container h2 {
+      font-size: 20px;
+    }
+  
+    .readme-container pre {
+      font-size: 12px;
+      max-height: 300px;
+    }
+  
+    .readme-container button {
+      font-size: 14px;
+      padding: 0.5rem 1rem;
+    }
+  }
+  

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchReadme, fetchUserProfile } from "../../services/githubService"; // ✅ Fetch user profile
-import GitHubHeatmap from "../Githubheatmap/GitHubHeatmap";
-
+import './ReadmeViewer.css'
 const ReadmeViewer = () => {
   const { owner, repo } = useParams(); // ✅ Get repo details from URL
   const token = localStorage.getItem("github_token");
@@ -17,13 +16,14 @@ const ReadmeViewer = () => {
   }, [token, owner, repo]);
 
   return (
-    <div>
+    <div className="readme">
+      <div className="readme-container">
       <h2>README for {repo}</h2>
-      <pre style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}>{readme}</pre>
+      <pre>{readme}</pre>
       <button onClick={() => window.history.back()}>🔙 Go Back</button>
-
-      {/* ✅ Only render Heatmap if username is available */}
     </div>
+    </div>
+    
   );
 };
 

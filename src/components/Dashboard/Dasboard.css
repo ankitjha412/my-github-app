@@ -1,6 +1,10 @@
 /* Header container styles */
 .dashboard-container{
     overflow: hidden;
+    background-color: #0d1117;
+}
+body{
+    background-color: #0d1117;
 }
 .header {
     display: flex;

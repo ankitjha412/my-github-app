@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchRecentCommits, fetchContributions } from "../services/githubService";
-import "./Commitdetails.css";
+import "./commitdetails.css";
 
 const CommitDetails = () => {
   const { owner, repo } = useParams(); // ✅ Get repo details from URL

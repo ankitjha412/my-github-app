@@ -20,6 +20,12 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="header">
+      <img
+    src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+    alt="GitHub Logo"
+    className="github-logo"
+  />
+
         <h2>GitHub Dashboard</h2>
       <UserSearch />
       </div>
@@ -33,8 +39,6 @@ const Dashboard = () => {
       </div>
       
 
-      {/* ✅ Search GitHub Users */}
-      {/* ✅ Repositories Section */}
 
     </div>
   );

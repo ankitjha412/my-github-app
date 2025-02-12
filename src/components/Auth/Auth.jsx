@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import './Auth.css';
 
 const CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID;
-const REDIRECT_URI = import.meta.env.VITE_GITHUB_REDIRECT_URI;
 
 const Auth = () => {
   const navigate = useNavigate();

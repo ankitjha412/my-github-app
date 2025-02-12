@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const API_URL = import.meta.env.VITE_GITHUB_API_URL;
-
+const Backend_URL= import.meta.env.VITE_BACKEND_URL;
 export const getGitHubToken = async (code) => {
-  const response = await axios.post("http://localhost:5000/auth/github", { code });
+  const response = await axios.post(`${Backend_URL}/auth/github`, { code });
   return response.data.access_token;
 };
 

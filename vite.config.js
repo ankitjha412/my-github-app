@@ -12,4 +12,5 @@ export default defineConfig({
   preview: {
     port: 4173,
   },
+  base: "/", // Ensure this is correctly set for SPA routing
 });

@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
-import './GitHubHeatmap.css';
+import './Githubheatmap.css';
 
 const GitHubHeatmap = ({ username }) => {
   if (!username) {
